@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@200;400;700;900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
 
+@import url('../css/mediaqueries.css');
+
 :root{
     /* -- : custom properties */
     --Montserrat: 'Montserrat', sans-serif;
@@ -230,6 +232,45 @@ header{
     font-family: var(--Crimson-text);
 }
 
+/* footer */
+footer{
+    background: var(--ex-dark);
+    color: #f3f3f3;
+    text-align: center;
+    padding: 2rem 0;
+}
 
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
 
+.social-links a{
+    border: 1px solid #f3f3f3;
+    color: #f3f3f3;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
 
+.social-links a:hover{
+    background: #f3f3f3;
+    color: var(--exDark);
+}
+
+footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Montserrat);
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
