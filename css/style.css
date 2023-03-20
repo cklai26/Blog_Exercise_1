@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@200;400;700;900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+:root{
+    /* -- : custom properties */
+    --Montserrat: 'Montserrat', sans-serif;
+    --Crimson-text: 'Crimson Text', serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #505050;
+    --ex-dark: #1d1d1d;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Roboto);
+}
+
+body{
+    line-height: 1.4;
+    color: var(--dark);
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+header{
+    min-height: 100vh;
+    /* background-image: url('../img/wirebackground.avif'); */
+    background: linear-gradient(0deg, rgba(221,212,255,0.3) 0%, rgba(244,187,255,10.3) 23%, rgba(190,253,255,10.3) 55%, rgba(184,243,255,0.3) 71%, rgba(253,255,202,0.3) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.navbar{
+    background: #17171a;
+    padding: 1.2rem;
+}
+
+.logo{
+    color: lightgray;
+    font-size: 4rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--Montserrat);
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Crimson-text);
+    letter-spacing: 1px ;
+    font-weight: 400;
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    transition: opacity 0.5s ease, color 0.5s ease;
+}
+
+.navbar-nav a:hover{
+    opacity: 0.7;
+    color: rgb(185, 247, 255);
+}
+
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--dark);
+}
+
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Montserrat);
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.banner-title span{
+    font-family: var(--Crimson-text);
+    color: var(--ex-dark);
+}
+
+.banner p {
+    padding: 1rem 0 2rem 0;
+    font-size: 1.6rem;
+    /* text-transform: capitalize; */
+    font-family: var(--Crimson-text);
+    font-weight: 400;
+    word-spacing: 2px;
+}
+
+.banner form{
+    background: #ffffff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.2rem;
+    width: 100%;
+    outline: 0;
+    padding 0.6rem 0;
+    border: none;
+}
+
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+
+.search-button{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+.search-button :hover{
+    cursor: pointer;
+}
+
